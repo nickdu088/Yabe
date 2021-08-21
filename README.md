@@ -1,5 +1,5 @@
 # Yabe
-Yet Another Bacnet Explorer
+Yet Another Bacnet Explorer .Net 5 WinForm
 
 forked from https://sourceforge.net/projects/yetanotherbacnetexplorer/
 
