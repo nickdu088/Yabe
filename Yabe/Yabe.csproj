@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="CalendarEditor.cs" />
+    <Compile Remove="CalendarEditor.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="CalendarEditor.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\add.png" />
+    <None Remove="Resources\application_form.png" />
+    <None Remove="Resources\bell.png" />
+    <None Remove="Resources\book_open.png" />
+    <None Remove="Resources\calendar.png" />
+    <None Remove="Resources\calendar_view_week.png" />
+    <None Remove="Resources\chart_line.png" />
+    <None Remove="Resources\clock.png" />
+    <None Remove="Resources\cross.png" />
+    <None Remove="Resources\database.png" />
+    <None Remove="Resources\database_delete.png" />
+    <None Remove="Resources\database_edit.png" />
+    <None Remove="Resources\database_go1.png" />
+    <None Remove="Resources\date.png" />
+    <None Remove="Resources\error.png" />
+    <None Remove="Resources\eye.png" />
+    <None Remove="Resources\find.png" />
+    <None Remove="Resources\information.png" />
+    <None Remove="Resources\magnifier.png" />
+    <None Remove="Resources\monitor.png" />
+    <None Remove="Resources\note.png" />
+    <None Remove="Resources\pencil_add.png" />
+    <None Remove="Resources\pencil_delete.png" />
+    <None Remove="Resources\plugin.png" />
+    <None Remove="Resources\text_smallcaps.png" />
+    <None Remove="Resources\time_go.png" />
+    <None Remove="Resources\transmit.png" />
+    <None Remove="Resources\world.png" />
+  </ItemGroup>
+
+
+
+  <ItemGroup>
+    <PackageReference Include="SharpPcap" Version="6.0.0" />
+    <PackageReference Include="System.IO.Ports" Version="5.0.1" />
+  </ItemGroup>
+
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZedGraph.WinForms\ZedGraph.WinForms.csproj" />
+    <ProjectReference Include="..\ZedGraph\ZedGraph.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

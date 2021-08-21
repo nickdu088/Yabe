@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+        <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>ZedGraph</RootNamespace>
+    <AssemblyName>ZedGraph.WinForms</AssemblyName>
+
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\zedgraphkey.snk</AssemblyOriginatorKeyFile>
+
+    <Product>ZedGraph Library</Product>
+    <Company>John Champion, et al.</Company>
+    <Authors>ZedGraph Project</Authors>
+    <Copyright>Copyright © 2003-2018 John Champion</Copyright>
+
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZedGraph\ZedGraph.csproj" />
+  </ItemGroup>
+
+</Project>
